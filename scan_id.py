@@ -23,9 +23,9 @@ def get_scan_id(all_files, url, params):
 if __name__ == "__main__":
     simpleLocker = []
     url = 'https://www.virustotal.com/vtapi/v2/file/scan'
-    params = {'apikey': '9b123d4c8003f5071e7c84bc76e93772d5191d33ca0ea8f2cf4867421b74b23f'}
+    params = {'apikey': '<insert VirusTotal API key>'}
     #SimpleLocker
-    all_files = get_files('C:\\Users\\Hassaan\\OneDrive - Umich\\Documents\\CIS 549 Software Security\\Term Project\\small_apk_dataset\\Benign')
+    all_files = get_files('<Insert directory path>')
     file1 = open("Benign.txt", "w")
     file1.writelines('\n'.join(get_scan_id(all_files,url,params)) + '\n')
     file1.close()

@@ -12,7 +12,7 @@ benign_files = 0
 path_to_file = "test3.json"
 path = Path(path_to_file)
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
-filenames = ["SimpleLocker.txt",  "Roop.txt", "Koler.txt", "Jisut.txt", "Fusob.txt"]
+filenames = ["SimpleLocker.txt",  "Roop.txt", "Koler.txt", "Jisut.txt", "Fusob.txt", "Aples.txt"]
 for files in filenames:
     with open(files, "r") as file1:
         for i in file1.readlines():
